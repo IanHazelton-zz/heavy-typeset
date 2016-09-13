@@ -1,0 +1,432 @@
+/*
+These utility styles should be considered immutable. They aid in scalability,
+maintenance, and readability by clearing stating what they do. For example, .u-db should
+always set display: block; and nothing else. This is similar to the concept of doing
+one thing and doing it well. If a particular utility class does not suite the needs of
+the mark-up element it’s applied to, remove/replace it from HTML.
+*/
+
+// Margin
+
+.u-m0 {
+  margin: 0;
+}
+
+.u-mt0 {
+  margin-top: 0;
+}
+
+.u-mr0 {
+  margin-right: 0;
+}
+
+.u-mb0 {
+  margin-bottom: 0;
+}
+
+.u-ml0 {
+  margin-left: 0;
+}
+
+.u-m1 {
+  margin: 1rem;
+}
+
+.u-mt1 {
+  margin-top: 1rem;
+}
+
+.u-mr1 {
+  margin-right: 1rem;
+}
+
+.u-mb1 {
+  margin-bottom: 1rem;
+}
+
+.u-ml1 {
+  margin-left: 1rem;
+}
+
+.u-m2 {
+  margin: 2rem;
+}
+
+.u-mt2 {
+  margin-top: 2rem;
+}
+
+.u-mr2 {
+  margin-right: 2rem;
+}
+
+.u-mb2 {
+  margin-bottom: 2rem;
+}
+
+.u-ml2 {
+  margin-left: 2rem;
+}
+
+// Padding
+
+.u-p0 {
+  padding: 0;
+}
+
+.u-pt0 {
+  padding-top: 0;
+}
+
+.u-pr0  {
+  padding-right: 0;
+}
+
+.u-pb0 {
+  padding-bottom: 0;
+}
+
+.u-pl0 {
+  padding-left: 0;
+}
+
+.u-p1 {
+  padding: 1rem;
+}
+
+.u-pt1 {
+  padding-top: 1rem;
+}
+
+.u-pr1 {
+  padding-right: 1rem;
+}
+
+.u-pb1 {
+  padding-bottom: 1rem;
+}
+
+.u-pl1 {
+  padding-left: 1rem;
+}
+
+.u-p2 {
+  padding: 2rem;
+}
+
+.u-pt2 {
+  padding-top: 2rem;
+}
+
+.u-pr2 {
+  padding-right: 2rem;
+}
+
+.u-pb2 {
+  padding-bottom: 2rem;
+}
+
+.u-pl2 {
+  padding-left: 2rem;
+}
+
+// Display
+
+.u-db {
+  display: block;
+}
+
+.u-show {
+  display: block !important;
+}
+
+.u-show-di {
+  display: inline !important;
+}
+
+.u-show-dib {
+  display: inline-block !important;
+}
+
+.u-dn {
+  display: none;
+}
+
+.u-hide {
+  display: none !important;
+}
+
+.u-hide-off-canvas {
+  transform: translateX(1000px);
+}
+
+.u-dib {
+  display: inline-block;
+}
+
+// Floats
+
+.u-fl {
+  float: left;
+}
+.u-fr {
+  float: right;
+}
+
+// Height
+
+.u-full-height {
+  min-height: 100vh;
+}
+
+// Width
+
+.u-full-width-break-container {
+  margin-left: calc(-50vw + 50%);
+  width: 100vw;
+}
+
+// Position
+
+.u-relative {
+  position: relative;
+}
+
+.u-absolute {
+  position: absolute;
+}
+
+.u-fixed {
+  position: fixed;
+}
+
+.u-pos-t0 {
+  top: 0;
+}
+
+.u-pos-r0 {
+  right: 0;
+}
+
+.u-pos-b0 {
+  bottom: 0;
+}
+
+.u-pos-l0 {
+  left: 0;
+}
+
+.u-pos-tr0 {
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+}
+
+.u-pos-tl0 {
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+}
+
+.u-pos-br0 {
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+}
+
+.u-pos-bl0 {
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+}
+
+.u-pos-tr10 {
+  top: 10px;
+  right: 10px;
+}
+
+.u-pos-tl10 {
+  top: 10px;
+  left: 10px;
+}
+
+.u-pos-br10 {
+  bottom: 10px;
+  right: 10px;
+}
+
+.u-pos-bl10 {
+  bottom: 10px;
+  left: 10px;
+}
+
+.u-pos-c {
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+}
+
+// Border-Radius
+
+.u-b-radius {
+  border-radius: 3px;
+}
+
+.u-b-radius-round {
+  border-radius: 50%;
+}
+
+.u-b-radius-big {
+  border-radius: 40px;
+}
+
+.u-b-radius-top {
+  border-radius: 3px 3px 0 0;
+}
+
+.u-b-radius-bottom {
+  border-radius: 0 0 3px 3px;
+}
+
+.u-b-radius-right {
+  border-radius: 0 3px 3px 0;
+}
+
+.u-b-radius-left {
+  border-radius: 3px 0 0 3px;
+}
+
+// Overflow
+
+.u-oh {
+  overflow: hidden;
+}
+
+// Truncate {
+
+.u-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Align
+
+.u-div-c {
+  margin: 0 auto;
+}
+
+.u-text-c {
+  text-align: center;
+}
+
+.u-text-r {
+  text-align: right;
+}
+
+.u-text-j {
+  text-align: justify;
+}
+
+
+// Divide
+
+.u-divider {
+  @include size(80%, 1px);
+  border: 0;
+  margin: 2px auto 12px auto;
+}
+
+// Cursor
+
+.u-cursor-hand {
+  cursor: pointer;
+}
+
+// Text
+
+.u-text-small {
+  font-size: 1.2rem;
+}
+
+.u-text-disclaimer {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.u-text-strike {
+  background-color: black;
+  color: #737373;
+  text-decoration: line-through;
+}
+
+.u-text-caps {
+  text-transform: uppercase;
+}
+// List
+
+.u-list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+// flex
+.u-flex {
+  display: flex;
+}
+
+.u-flex-a-c {
+  align-items: center;
+}
+
+.u-flex-j-c {
+  justify-content: center;
+}
+
+.u-flex-j-f-e {
+  justify-content: flex-end;
+}
+
+.u-flex-j-f-s {
+  justify-content: flex-start;
+}
+
+.u-flex-j-s-a {
+  justify-content: space-around;
+}
+
+.u-flex-j-s-b {
+  justify-content: space-between;
+}
+
+.u-flex-column {
+  flex-direction: column;
+}
+
+.u-flex-column-r {
+  flex-direction: column-reverse;
+}
+
+.u-flex-row {
+  flex-direction: row;
+}
+
+.u-flex-row-r {
+  flex-direction: row-reverse;
+}
+
+.u-flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.u-toggle-f-h {
+  height: 100%;
+    @include breakpoint(md) {
+    height: 100vh;
+    }
+}

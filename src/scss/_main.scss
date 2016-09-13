@@ -1,0 +1,246 @@
+@import 'https://fonts.googleapis.com/css?family=Fjalla+One|Playfair+Display';
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+	background: $bodyBg;
+	font-family: 'Playfair Display', serif;
+}
+
+/* ------------------------------------------------------------------ */
+/* Typography
+/* ------------------------------------------------------------------ */
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Fjalla One', sans-serif;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300; }
+
+.text--highlight {
+  color: $brand--primary;
+}
+
+.link--default {
+  color: lighten($brand--primary, 20%);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 300ms;
+  &:hover {
+  color: $brand--primary;
+  }
+}
+/* ------------------------------------------------------------------ */
+/* Hero
+/* ------------------------------------------------------------------ */
+
+.skew-bg {
+  //background-color: $brand--primary; //have solid colour, instead of an image
+  background: $bg-img-hero top center no-repeat;
+  height: 110vh;
+  position: absolute;
+  top: -15%;
+  transform: skew(0deg, 7deg);
+  width: 100vw;
+  z-index: -10;
+    //an optional colour gradient and texture over the image
+    &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    //texture overlay
+    background: $bg-overlay-lines, linear-gradient(to bottom right,$hero-gradiant-start,$hero-gradiant-stop);
+    opacity: 1;
+    }
+}
+
+.hero__inner {
+	max-width: 96rem;
+	padding: 2rem;
+}
+
+.hero__title {
+	color: $text--alt;
+	font-weight: 900;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+  font-size: 8rem;
+  border-top: 5px solid $text--alt;
+  border-bottom: 5px solid $text--alt;
+  @include breakpoint(md) {
+    font-size: 15rem;
+  }
+}
+
+.hero__sub-title {
+	color: $text--alt;
+	text-transform: lowercase;
+	font-size: 2rem;
+	font-style: italic;
+	font-weight: 400;
+  padding-bottom: 3rem;
+	width: 100%;
+  @include breakpoint(md) {
+    font-size: 3rem;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Section One
+/* ------------------------------------------------------------------ */
+.section {
+  height: 100%;
+    @include breakpoint(md) {
+    max-height: 100vh;
+
+    }
+}
+
+.one__title {
+  text-align: left;
+  color: $text--main;
+  line-height: 1.25em;
+  font-size: 8.4rem;
+  margin: 0 auto;
+  //padding: 1em 0;
+  text-align: center;
+    @include breakpoint(md) {
+    font-size: 10rem;
+    }
+}
+
+.one__p {
+  color: $text--main;
+  font-size: 2rem;
+  line-height: 1.75em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 6%;
+    @include breakpoint(md) {
+    	font-size: 3.4rem;
+    }
+}
+/* ------------------------------------------------------------------ */
+/* Section Two
+/* ------------------------------------------------------------------ */
+.full-bg-img {
+  align-content: space-around;
+  background: $bg-img-one;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.two__cnt {
+  max-width: 90vw;
+}
+
+.two__p {
+  color: $brand--primary;
+  font-size: 5rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 3rem;
+  text-transform: capitalize;
+  mix-blend-mode: multiply;
+  @include breakpoint(md) {
+    font-size: 9rem;
+    margin-bottom: 10rem;
+  }
+}
+
+.button {
+    background: rgba(255,255,255,0.5);
+    border: 3px solid $brand--primary;
+    border-radius: 5px;
+    color: $brand--primary;
+    font-family: 'arial', sans-serif;
+    font-size: 3rem;
+    padding: 1rem;
+    text-decoration: none;
+    transition: background 300ms;
+    &:hover {
+      background: rgba(255,255,255,0.7);
+    }
+}
+
+
+/* ------------------------------------------------------------------ */
+/* Section Three
+/* ------------------------------------------------------------------ */
+.section.three {
+  background-color: $brand--primary;
+  text-shadow: 0px 3px 0px darken($brand--primary, 10%), 0px 14px 10px rgba(0,0,0,0.15), 0px 24px 2px rgba(0,0,0,0.1), 0px 34px 30px rgba(0,0,0,0.1);
+}
+
+.title--jumbo {
+	color: #999;
+  font-size: 36vw;
+  font-weight: bold;
+	line-height: 1em;
+	letter-spacing: 2px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+	text-transform: uppercase;
+  text-align: right;
+    @include breakpoint(md) {
+    	font-size: 23rem;
+    }
+}
+
+/* ------------------------------------------------------------------ */
+/* Section Four
+/* ------------------------------------------------------------------ */
+.section.four {
+  display: flex !important;
+  max-height: 100vh;
+  width: 100vw;
+}
+.service__icon {
+  color: #999;
+  padding: 1rem;
+  font-size: 8rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Footer Section
+/* ------------------------------------------------------------------ */
+
+footer {
+	background-color: $brand--primary;
+	color: #303030;
+	font-size: 1.4rem;
+  min-height: 20rem;
+	text-align: center;
+	position: relative;
+}
+
+.footer__icon {
+  color: $text--alt;
+  font-size: 3rem;
+  margin: .5rem;
+  padding: 1rem;
+  transition: all 300ms   ease;
+  width: 4.25rem;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.copyright {
+  color: $text--alt;
+  font-family: 'arial', sans-serif;
+  padding: 3rem;
+}
