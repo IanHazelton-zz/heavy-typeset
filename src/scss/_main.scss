@@ -1,9 +1,8 @@
 @import 'https://fonts.googleapis.com/css?family=Fjalla+One|Playfair+Display';
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
+
 html {
   font-size: 62.5%;
   text-rendering: optimizeLegibility;
@@ -12,7 +11,13 @@ html {
 body {
 	background: $bodyBg;
 	font-family: 'Playfair Display', serif;
+  overflow-x: hidden;
 }
+
+// .section {
+//   height: 100%;
+//   min-height: 100vh;
+// }
 
 /* ------------------------------------------------------------------ */
 /* Typography
@@ -21,7 +26,8 @@ h1, h2, h3, h4, h5, h6 {
  font-family: 'Fjalla One', sans-serif;
   margin-top: 0;
   margin-bottom: 2rem;
-  font-weight: 300; }
+  font-weight: 300;
+}
 
 .text--highlight {
   color: $brand--primary;
@@ -36,6 +42,7 @@ h1, h2, h3, h4, h5, h6 {
   color: $brand--primary;
   }
 }
+
 /* ------------------------------------------------------------------ */
 /* Hero
 /* ------------------------------------------------------------------ */
@@ -43,6 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 .skew-bg {
   //background-color: $brand--primary; //have solid colour, instead of an image
   background: $bg-img-hero top center no-repeat;
+  background-size: cover;
   height: 110vh;
   position: absolute;
   top: -15%;
@@ -63,14 +71,21 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.cnt__hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero__inner {
 	max-width: 96rem;
 	padding: 2rem;
 }
 
 .hero__title {
-	color: $text--alt;
-	font-weight: 900;
+  color: $text--alt;;
+  font-weight: 900;
 	letter-spacing: 5px;
 	text-transform: uppercase;
   font-size: 8rem;
@@ -83,7 +98,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero__sub-title {
 	color: $text--alt;
-	text-transform: lowercase;
 	font-size: 2rem;
 	font-style: italic;
 	font-weight: 400;
@@ -97,51 +111,56 @@ h1, h2, h3, h4, h5, h6 {
 /* ------------------------------------------------------------------ */
 /* Section One
 /* ------------------------------------------------------------------ */
-.section {
-  height: 100%;
-    @include breakpoint(md) {
-    max-height: 100vh;
 
-    }
+.section.one {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
 }
 
 .one__title {
-  text-align: left;
   color: $text--main;
-  line-height: 1.25em;
   font-size: 8.4rem;
+  line-height: 1.25em;
   margin: 0 auto;
-  //padding: 1em 0;
   text-align: center;
+  width: 100vw;
     @include breakpoint(md) {
+    width: 50vw;
     font-size: 10rem;
     }
 }
 
 .one__p {
   color: $text--main;
-  font-size: 2rem;
+  font-size: calc(32px + (8-32)*(100vw - 400px) / (800 - 400));
   line-height: 1.75em;
   margin-top: 20px;
   margin-bottom: 20px;
   padding-top: 6%;
+  width: 100vw;
     @include breakpoint(md) {
+      width: 50vw;
     	font-size: 3.4rem;
     }
 }
 /* ------------------------------------------------------------------ */
 /* Section Two
 /* ------------------------------------------------------------------ */
-.full-bg-img {
+.section.two {
   align-content: space-around;
-  background: $bg-img-one;
+  background: $bg-img-two;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
-  height: 100vh;
-  margin: 0 auto;
+  background-position: bottom right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 2em;
-}
+  }
 
 .two__cnt {
   max-width: 90vw;
@@ -149,11 +168,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .two__p {
   color: $brand--primary;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
   font-style: italic;
-  margin-bottom: 3rem;
-  text-transform: capitalize;
+  text-transform: uppercase;
   mix-blend-mode: multiply;
   @include breakpoint(md) {
     font-size: 9rem;
@@ -161,28 +179,18 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.button {
-    background: rgba(255,255,255,0.5);
-    border: 3px solid $brand--primary;
-    border-radius: 5px;
-    color: $brand--primary;
-    font-family: 'arial', sans-serif;
-    font-size: 3rem;
-    padding: 1rem;
-    text-decoration: none;
-    transition: background 300ms;
-    &:hover {
-      background: rgba(255,255,255,0.7);
-    }
-}
+
 
 
 /* ------------------------------------------------------------------ */
 /* Section Three
 /* ------------------------------------------------------------------ */
 .section.three {
-  background-color: $brand--primary;
-  text-shadow: 0px 3px 0px darken($brand--primary, 10%), 0px 14px 10px rgba(0,0,0,0.15), 0px 24px 2px rgba(0,0,0,0.1), 0px 34px 30px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2em;
 }
 
 .title--jumbo {
@@ -191,12 +199,24 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 	line-height: 1em;
 	letter-spacing: 2px;
-  margin-top: 25px;
-  margin-bottom: 30px;
+  margin-top: 5rem;
 	text-transform: uppercase;
   text-align: right;
+  opacity: 0.1;
+  position: absolute;
+  z-index: -2;
     @include breakpoint(md) {
     	font-size: 23rem;
+    }
+}
+
+.three__p {
+  color: $text--main;
+  font-size: calc(28px + (8-28)*(100vw - 400px) / (800 - 400));
+  line-height: 1.75em;
+    @include breakpoint(md) {
+      padding-bottom: 5rem;
+      width: 80vw;
     }
 }
 
@@ -204,38 +224,219 @@ h1, h2, h3, h4, h5, h6 {
 /* Section Four
 /* ------------------------------------------------------------------ */
 .section.four {
-  display: flex !important;
-  max-height: 100vh;
-  width: 100vw;
-}
-.service__icon {
-  color: #999;
-  padding: 1rem;
-  font-size: 8rem;
+  background-color: #333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
+.four__title {
+    color: #2f2f2f;
+    font-size: calc(104px + (81-104)*(100vw - 400px) / (800 - 400));
+    line-height: 1.25em;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: right;
+    position: absolute;
+}
+
+.cnt__form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+
+form {
+  background-color: rgba(0,0,0,0);
+  max-width: 600px;
+  margin: 1rem auto;
+  position: relative;
+  width: 90%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+form::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+form h4,
+form .cd-label {
+  font-size: 1.3rem;
+  color: #94aab0;
+  margin-bottom: 10px;
+}
+
+form .cd-label {
+  display: block;
+}
+
+form input,
+form textarea,
+form select,
+form label {
+  background-color: rgba(0,0,0,0);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  color: #2b3e51;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select,
+form legend {
+  display: block;
+  width: 100%;
+  appearance: none;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+  color: $text--alt;
+  padding: 12px;
+  text-align: center;
+}
+
+form textarea {
+  height: 50px;
+  resize: vertical;
+  overflow: auto;
+}
+
+form input[type="submit"] {
+  border-radius: .5rem;
+  font-family: 'arial', sans-serif;
+  font-size: 1.75rem;
+  margin: 0 auto;
+  max-width: 10rem;
+  min-width: 20rem;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: background 300ms;
+  background: $brand--primary;
+  border: .3rem solid $brand--primary;
+  color: $text--alt;
+      &:hover {
+          background: darken($brand--primary, 15%);
+      }
+}
+
+input,
+textarea {
+  border: none;
+  border-radius: 0;
+}
+
+input,
+textarea {
+  border-bottom: 2px solid $brand--primary;
+}
+
+textarea:focus,
+input:focus {
+  outline-color: $brand--primary;
+}
+
+textarea {
+    width: 300px;
+    height: 150px;
+    margin-bottom: 3.5rem;
+}
+/* ------------------------------------------------------------------ */
+/* Section Five
+/* ------------------------------------------------------------------ */
+.section.five {
+  background-color: #333;
+  height: 100%;
+}
+
+.five__title {
+  color: $text--alt;
+  font-size: 8.4rem;
+  line-height: 1.25em;
+  margin: 0 auto;
+  text-align: center;
+  width: 100vw;
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 2rem 0;
+  @include breakpoint(md) {
+    padding: .5vw;
+  }
+}
+
+.gallery__img-cnt {
+  align-items: center;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  text-align: center;
+  width: 200px;
+  @include breakpoint(md) {
+    margin: .5vw;
+  }
+}
+
+.gallery__img {
+  height: auto;
+  transition: all 300ms ease;
+  width: 100%;
+}
+
+.gallery__img-cnt:hover > .gallery__text {
+  opacity: 1;
+}
+
+.gallery__text {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  opacity: 0;
+  padding: 1em;
+  position: absolute;
+  transition: opacity 500ms ease;
+}
 /* ------------------------------------------------------------------ */
 /* Footer Section
 /* ------------------------------------------------------------------ */
 
-footer {
+.footer {
+  align-content: space-around;
 	background-color: $brand--primary;
-	color: #303030;
+  display: flex;
+  flex-direction: column;
 	font-size: 1.4rem;
   min-height: 20rem;
 	text-align: center;
-	position: relative;
+  height: 50vh;
+  justify-content: center;
+  padding: 2em;
 }
 
 .footer__icon {
   color: $text--alt;
   font-size: 3rem;
-  margin: .5rem;
   padding: 1rem;
   transition: all 300ms   ease;
   width: 4.25rem;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 }
 
