@@ -368,65 +368,10 @@ the mark-up element it’s applied to, remove/replace it from HTML.
 .u-text-caps {
   text-transform: uppercase;
 }
+
 // List
 
 .u-list-reset {
   list-style: none;
   margin: 0;
   padding: 0; }
-
-// flex
-.u-flex {
-  display: flex;
-}
-
-.u-flex-a-c {
-  align-items: center;
-}
-
-.u-flex-j-c {
-  justify-content: center;
-}
-
-.u-flex-j-f-e {
-  justify-content: flex-end;
-}
-
-.u-flex-j-f-s {
-  justify-content: flex-start;
-}
-
-.u-flex-j-s-a {
-  justify-content: space-around;
-}
-
-.u-flex-j-s-b {
-  justify-content: space-between;
-}
-
-.u-flex-column {
-  flex-direction: column;
-}
-
-.u-flex-column-r {
-  flex-direction: column-reverse;
-}
-
-.u-flex-row {
-  flex-direction: row;
-}
-
-.u-flex-row-r {
-  flex-direction: row-reverse;
-}
-
-.u-flex-nowrap {
-  flex-wrap: nowrap;
-}
-
-.u-toggle-f-h {
-  height: 100%;
-    @include breakpoint(md) {
-    height: 100vh;
-    }
-}

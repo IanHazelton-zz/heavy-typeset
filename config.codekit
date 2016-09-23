@@ -22,6 +22,22 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
 		},
+	"\/src\/scss\/_buttons.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/scss\/_buttons.scss",
+		"outputAbbreviatedPath": "\/src\/css\/_buttons.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/src\/scss\/_colourvars.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -102,6 +118,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/src\/scss\/_typography.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/scss\/_typography.scss",
+		"outputAbbreviatedPath": "\/src\/css\/_typography.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/src\/scss\/_utility.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -142,6 +174,171 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/target\/img\/gallery\/gallery-img1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 294587,
+		"inputAbbreviatedPath": "\/target\/img\/gallery\/gallery-img1.jpg",
+		"outputAbbreviatedPath": "\/target\/img\/gallery\/gallery-img1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/target\/img\/gallery\/gallery-img10.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 100943,
+		"inputAbbreviatedPath": "\/target\/img\/gallery\/gallery-img10.jpg",
+		"outputAbbreviatedPath": "\/target\/img\/gallery\/gallery-img10.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/target\/img\/gallery\/gallery-img11.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 195607,
+		"inputAbbreviatedPath": "\/target\/img\/gallery\/gallery-img11.jpg",
+		"outputAbbreviatedPath": "\/target\/img\/gallery\/gallery-img11.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/target\/img\/gallery\/gallery-img12.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 145988,
+		"inputAbbreviatedPath": "\/target\/img\/gallery\/gallery-img12.jpg",
+		"outputAbbreviatedPath": "\/target\/img\/gallery\/gallery-img12.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/target\/img\/gallery\/gallery-img2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 161909,
+		"inputAbbreviatedPath": "\/target\/img\/gallery\/gallery-img2.jpg",
+		"outputAbbreviatedPath": "\/target\/img\/gallery\/gallery-img2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/target\/img\/gallery\/gallery-img3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 213033,
+		"inputAbbreviatedPath": "\/target\/img\/gallery\/gallery-img3.jpg",
+		"outputAbbreviatedPath": "\/target\/img\/gallery\/gallery-img3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/target\/img\/gallery\/gallery-img4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 116917,
+		"inputAbbreviatedPath": "\/target\/img\/gallery\/gallery-img4.jpg",
+		"outputAbbreviatedPath": "\/target\/img\/gallery\/gallery-img4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/target\/img\/gallery\/gallery-img5.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 270857,
+		"inputAbbreviatedPath": "\/target\/img\/gallery\/gallery-img5.jpg",
+		"outputAbbreviatedPath": "\/target\/img\/gallery\/gallery-img5.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/target\/img\/gallery\/gallery-img6.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 265254,
+		"inputAbbreviatedPath": "\/target\/img\/gallery\/gallery-img6.jpg",
+		"outputAbbreviatedPath": "\/target\/img\/gallery\/gallery-img6.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/target\/img\/gallery\/gallery-img7.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 111231,
+		"inputAbbreviatedPath": "\/target\/img\/gallery\/gallery-img7.jpg",
+		"outputAbbreviatedPath": "\/target\/img\/gallery\/gallery-img7.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/target\/img\/gallery\/gallery-img8.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 180176,
+		"inputAbbreviatedPath": "\/target\/img\/gallery\/gallery-img8.jpg",
+		"outputAbbreviatedPath": "\/target\/img\/gallery\/gallery-img8.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/target\/img\/gallery\/gallery-img9.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 151669,
+		"inputAbbreviatedPath": "\/target\/img\/gallery\/gallery-img9.jpg",
+		"outputAbbreviatedPath": "\/target\/img\/gallery\/gallery-img9.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/target\/img\/heavy-hero.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 525395,
+		"inputAbbreviatedPath": "\/target\/img\/heavy-hero.jpg",
+		"outputAbbreviatedPath": "\/target\/img\/heavy-hero.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/target\/img\/mountains2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 523607,
+		"inputAbbreviatedPath": "\/target\/img\/mountains2.jpg",
+		"outputAbbreviatedPath": "\/target\/img\/mountains2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/target\/img\/mountains3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 73696,
+		"inputAbbreviatedPath": "\/target\/img\/mountains3.jpg",
+		"outputAbbreviatedPath": "\/target\/img\/mountains3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/target\/scripts\/main-min.js": {
 		"fileType": 64,
